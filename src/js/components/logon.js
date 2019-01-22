@@ -170,7 +170,7 @@ function LogonViewModel() {
         //Grab preferences
         multiAPINewest("get_preferences", {
           'wallet_id': WALLET.identifier(),
-          'network': (USE_TESTNET || USE_REGTEST) ? 'testnet' : 'mainnet',
+          'network': USE_TESTNET ? 'testnet' : USE_REGTEST ? 'regtest' : 'mainnet',
           'for_login': true
         }, 'last_updated', self.onReceivedPreferences);
 
