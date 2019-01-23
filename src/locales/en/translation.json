@@ -36,6 +36,7 @@
   "log_into_your_wallet": "Log Into Your Wallet",
   "dev_mode_enabled": "Dev Mode Enabled",
   "testnet_in_use": "Testnet In Use",
+  "regtest_in_use": "Regtest In Use",
   "open_wallet": "Open Wallet",
   "login": "Login",
   "login_problems": "Problems logging in?",
