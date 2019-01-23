@@ -85,6 +85,11 @@ server {
     expires 1h;
     alias /counterblock_data/asset_img.testnet/;
   }
+  location /_r_asset_img/  {
+    access_log off;
+    expires 1h;
+    alias /counterblock_data/asset_img.regtest/;
+  }
   location /src  {
     #For dev/testing (uses unminified resources)
     open_file_cache off;
